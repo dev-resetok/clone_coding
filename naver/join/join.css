@@ -169,7 +169,7 @@ label {
 .input {
     flex: 1 1 auto;
     box-sizing: border-box;
-    width: Calc(100%-10px);
+    width: calc(100% - 10px);
     font-size: 16px;
     line-height: 22px;
     color: #222;
@@ -186,6 +186,15 @@ label[for=join_toggle] {
 
 ::placeholder {
    color: #c0c0c0;
+}
+
+.checkbox_wrap {
+    width: 20px;
+    margin-right: 10px;
+   
+    &>img{
+        width: 100%;
+    }
 }
 
 .user_wrap {
