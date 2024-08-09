@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="detail.css" />
+        <link
+            rel="shortcut icon"
+            href="https://static.wadiz.kr/assets/icon/favicon.ico"
+        />
+        <title>와디즈</title>
+        <!-- 대 -> 중 -> 소 -> 요소 -->
+        <!-- container -> wrapper -> inner -> item -->
+        <!-- 클래스명 중 not_work 는 화면상에서 구현하지 않을 요소들이다. -->
+    </head>
+    <body>
+        <div id="main_app" class="main_container">
+            <header class="header_container">
+                <!-- 반응형까지 구현하지는 않을 예정이라 클래스명에서 desktop 제외-->
+                <div class="header_wrapper">
+                    <h1 class="main_logo">
+                        <a href="https://www.wadiz.kr/web/main">
+                            <span class="label">와디즈</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="85"
+                                height="25"
+                                viewBox="0 0 85 25"
+                            >
+                                <path
+                                    fill="#1D2129"
+                                    fill-rule="nonzero"
+                                    d="M58.49 2.23h2.11v21.29H59a1.73 1.73 0 0 1-1.62-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29 7.65 7.65 0 0 1 12.79-5.07V4.23a2 2 0 0 1 2-2zm-6.3 18.62a4.36 4.36 0 0 0 4.16-4.52 4.19 4.19 0 1 0-8.35 0 4.36 4.36 0 0 0 4.19 4.52zM42 23.52h-1.52a1.73 1.73 0 0 1-1.64-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29A7.65 7.65 0 0 1 38 10.72a2 2 0 0 1 1.9-1.79H42v14.59zm-8.41-2.67h.02a4.35 4.35 0 0 0 4.15-4.52 4.35 4.35 0 0 0-4.17-4.51 4.35 4.35 0 0 0-4.17 4.51 4.36 4.36 0 0 0 4.17 4.52zM83.47 8.94v2.11l-7.07 9.06h7.06v3.47h-13v-2.1l7.08-9.07h-6.62v-1.47a2 2 0 0 1 2-2h10.55zM65.86 7.3a2.48 2.48 0 1 1 0-4.96 2.48 2.48 0 0 1 0 4.96zM21.21 8.94h4.14l-4.86 14.59h-4.15l-3.21-9.36-3.21 9.36H5.77L.92 8.94h4.13L8 18l2.5-7.74a2 2 0 0 1 1.86-1.34h2.9l3 9.08 2.95-9.06zm42.65 14.59l-.04-12.59a2 2 0 0 1 2-2h2.11v14.59h-4.07z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </h1>
+                    <nav class="GNB_container">
+                        <ul>
+                            <li class="GNB_item">
+                                <a
+                                    class="GNB_link"
+                                    href="/web/wreward/comingsoon"
+                                >
+                                    오픈예정
+                                </a>
+                            </li>
+                            <li class="GNB_item">
+                                <a class="GNB_link" href="/web/wreward/main">
+                                    펀딩
+                                </a>
+                            </li>
+                            <li class="GNB_item">
+                                <a class="GNB_link" href="/web/preorder/main">
+                                    프리오더
+                                </a>
+                            </li>
+                            <li class="GNB_item">
+                                <a class="GNB_link" href="/web/store/main">
+                                    스토어
+                                </a>
+                            </li>
+                            <li class="GNB_item">
+                                <button class="GNB_link">
+                                    "더보기"
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        focusable="false"
+                                        role="presentation"
+                                        class="icon_button GNB_icon_button"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M7.924 2.576l-.848.848L15.65 12l-8.575 8.576.848.848L17.35 12 7.924 2.576z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="not_work menu_more_container"></div>
+                        <div class="not_work back_drop"></div>
+                    </nav>
+                    <div class="header_util_container">
+                        <div class="search_container search_visible">
+                            <form>
+                                <div
+                                    class="search_wrapper"
+                                    tabindex="-1"
+                                    style="
+                                        border-radius: 20px;
+                                        height: 40px;
+                                        min-height: 40px;
+                                        line-height: 40px;
+                                        padding-right: 16px;
+                                    "
+                                >
+                                    <div class="search_blank"></div>
+                                    <div class="search_box">
+                                        <input
+                                            type="search"
+                                            placeholder="새로운 일상이 필요하신가요?"
+                                            aria-label="검색"
+                                            value
+                                        />
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="search_button"
+                                        aria-label="검색"
+                                    >
+                                        <svg
+                                            viewBox="0 0 40 40"
+                                            focusable="false"
+                                            role="presentation"
+                                            class="icon_button"
+                                            aria-hidden="true"
+                                            style="width: 24px; height: 24px"
+                                        >
+                                            <path
+                                                fill="none"
+                                                d="M0 0h40v40H0z"
+                                            ></path>
+                                            <path
+                                                d="M29.2 27.91a14.38 14.38 0 1 0-1.42 1.4l7.16 7.15.07.08 1.41-1.41zM18.45 6a12.36 12.36 0 0 1 8.35 3.23 12.24 12.24 0 0 1 4 8.59A12.39 12.39 0 1 1 17.88 6z"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="not_work" style="display: none"></div>
+                        </div>
+                        <div class="user_services_container">
+                            <div class="user_services_wrapper">
+                                <button id="user_service_button">로그인</button>
+                                <button id="user_service_button">
+                                    회원가입
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="web_header_project_container project_container"
+                        >
+                            <div class="project_wrapper">
+                                <div aria-describedby="Popper_19">
+                                    <button
+                                        class="project_button button_button"
+                                        aria-label="프로젝트 만들기"
+                                    >
+                                        <span>
+                                            <span
+                                                class="project_item button_children"
+                                                >프로젝트 만들기</span
+                                            >
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="not_work"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="not_work"></div>
+                </div>
+            </header>
+            <main class="main_container">
+                <div></div>
+                <footer class="not_work"></footer>
+            </main>
+            <aside class="float_buttons_container"></aside>
+        </div>
+    </body>
+</html>
