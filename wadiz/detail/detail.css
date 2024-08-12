@@ -252,6 +252,10 @@ nav {
     font-size: 14px;
 }
 
+.search_box input::placeholder {
+    color: #adb5bd;
+}
+
 input {
     color: inherit;
     font-family: inherit;margin: 0;
